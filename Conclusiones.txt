@@ -1,0 +1,15 @@
+🧾 Conclusiones (orientadas a proceso de selección)
+
+Se diseñó e implementó un framework de automatización de APIs con Karate, priorizando simplicidad, mantenibilidad y alineación con buenas prácticas del ecosistema Java/Maven.
+
+Se aseguró la reproducibilidad de las ejecuciones, alineando la configuración local con la documentación del proyecto (README), minimizando riesgos de fallas en nuevas ejecuciones o en entornos CI/CD.
+
+La configuración por ambientes mediante karate-config.js permitió desacoplar la lógica de prueba del entorno de ejecución, facilitando la escalabilidad y el mantenimiento del framework.
+
+Se optimizó la estructura de los features, aplicando reuso de escenarios, uso adecuado de Background y separación clara entre configuración, datos y validaciones, con la finalidad de reducir duplicidad.
+
+Se implementó data-driven testing real mediante archivos externos (CSV/JSON), demostrando un enfoque orientado a pruebas escalables y fáciles de extender.
+
+El uso de tags y ejecución controlada por línea de comandos permitió seleccionar subconjuntos de pruebas de forma flexible, optimizando tiempos de ejecución y facilitando su integración en pipelines automatizados.
+
+Se generó evidencia de ejecución actualizada, validando el correcto funcionamiento de la solución y complementando cualquier reporte histórico previo.

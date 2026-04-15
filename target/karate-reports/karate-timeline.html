@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/compra[1.1:23]","start":1776231790211,"end":1776231791480,"title":"features\/compra[1.1:23] 00:43:10.211-00:43:11.480 Validar registro de usuario en signup"},{"id":2,"group":1,"content":"features\/compra[2.1:40]","start":1776231791507,"end":1776231792092,"title":"features\/compra[2.1:40] 00:43:11.507-00:43:12.092 Validar registro de usuario existente en signup"},{"id":3,"group":1,"content":"features\/compra[3.1:58]","start":1776231792110,"end":1776231792742,"title":"features\/compra[3.1:58] 00:43:12.110-00:43:12.742 Validar login"},{"id":4,"group":1,"content":"features\/compra[4.1:77]","start":1776231792755,"end":1776231793318,"title":"features\/compra[4.1:77] 00:43:12.755-00:43:13.318 Validar login con credenciales incorrectas"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
