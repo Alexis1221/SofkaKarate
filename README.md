@@ -1,4 +1,4 @@
-# 🐾 DEMOBLAZE (Karate)
+#  DEMOBLAZE (Karate)
 
 
 
